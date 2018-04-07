@@ -1,5 +1,5 @@
 //
-//  ListenViewController.swift
+//  PlayerViewController.swift
 //  ImitateKugouApp
 //
 //  Created by yetaiwen on 2018/4/7.
@@ -8,12 +8,14 @@
 
 import UIKit
 
-class ListenViewController: UIViewController {
+
+class PlayerViewController: UIViewController {
+
+    static let SharePlayer = PlayerViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.yellow
         // Do any additional setup after loading the view.
     }
 

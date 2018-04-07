@@ -1,5 +1,5 @@
 //
-//  ListenViewController.swift
+//  LookViewController.swift
 //  ImitateKugouApp
 //
 //  Created by yetaiwen on 2018/4/7.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ListenViewController: UIViewController {
+class LookViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.blue
 
-        view.backgroundColor = UIColor.yellow
         // Do any additional setup after loading the view.
     }
 

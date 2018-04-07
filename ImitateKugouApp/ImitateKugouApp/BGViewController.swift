@@ -17,7 +17,7 @@ class BGViewController: UIViewController,MainNavigationDelegate {
     }()
     
     lazy var mainController : MainNaviController = {
-        let listenController = ListenViewController()
+        let listenController = kugouViewController()
         listenController.mainDelegate = self
         let mainNaviController = MainNaviController.init(rootViewController: listenController)
         return mainNaviController

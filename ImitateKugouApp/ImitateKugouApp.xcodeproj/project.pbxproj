@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114CE5742078624A00A72430 /* ListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114CE5732078624A00A72430 /* ListenViewController.swift */; };
+		118B315420786363009558CD /* LookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B315320786363009558CD /* LookViewController.swift */; };
+		118B3158207863A5009558CD /* SingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B3157207863A5009558CD /* SingViewController.swift */; };
+		118B315C2078B3E8009558CD /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B315A2078B3E8009558CD /* PlayerViewController.swift */; };
+		118B315D2078B3E8009558CD /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118B315B2078B3E8009558CD /* PlayerViewController.xib */; };
 		118BE3BF2074E55400671DC9 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BE3BE2074E55400671DC9 /* Common.swift */; };
 		118BE3C22075042400671DC9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BE3C02075042400671DC9 /* LoginViewController.swift */; };
 		11DA2762207654910062792C /* MainNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DA2761207654910062792C /* MainNaviController.swift */; };
-		11DA2765207661DA0062792C /* ListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DA2764207661DA0062792C /* ListenViewController.swift */; };
+		11DA2765207661DA0062792C /* kugouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DA2764207661DA0062792C /* kugouViewController.swift */; };
 		11DA276720767B220062792C /* BaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DA276620767B220062792C /* BaceViewController.swift */; };
 		1960E5A3205D123B0047284B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1960E5A2205D123B0047284B /* Launch Screen.storyboard */; };
 		19BA7D81205A2DF900897187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA7D80205A2DF900897187 /* AppDelegate.swift */; };
@@ -41,10 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		114CE5732078624A00A72430 /* ListenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenViewController.swift; sourceTree = "<group>"; };
+		118B315320786363009558CD /* LookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookViewController.swift; sourceTree = "<group>"; };
+		118B3157207863A5009558CD /* SingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingViewController.swift; sourceTree = "<group>"; };
+		118B315A2078B3E8009558CD /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		118B315B2078B3E8009558CD /* PlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerViewController.xib; sourceTree = "<group>"; };
 		118BE3BE2074E55400671DC9 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		118BE3C02075042400671DC9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		11DA2761207654910062792C /* MainNaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNaviController.swift; sourceTree = "<group>"; };
-		11DA2764207661DA0062792C /* ListenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenViewController.swift; sourceTree = "<group>"; };
+		11DA2764207661DA0062792C /* kugouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kugouViewController.swift; sourceTree = "<group>"; };
 		11DA276620767B220062792C /* BaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaceViewController.swift; sourceTree = "<group>"; };
 		1960E5A2205D123B0047284B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		19BA7D7D205A2DF900897187 /* ImitateKugouApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImitateKugouApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,16 +98,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1174A0582075BC3B00F8B8FD /* Cell */ = {
+		118B315520786387009558CD /* Look */ = {
 			isa = PBXGroup;
 			children = (
+				118B315320786363009558CD /* LookViewController.swift */,
 			);
-			path = Cell;
+			path = Look;
+			sourceTree = "<group>";
+		};
+		118B31562078639A009558CD /* Sing */ = {
+			isa = PBXGroup;
+			children = (
+				118B3157207863A5009558CD /* SingViewController.swift */,
+			);
+			path = Sing;
+			sourceTree = "<group>";
+		};
+		118B31592078B3D2009558CD /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				118B315A2078B3E8009558CD /* PlayerViewController.swift */,
+				118B315B2078B3E8009558CD /* PlayerViewController.xib */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 		11DA2760207654500062792C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				11DA2764207661DA0062792C /* kugouViewController.swift */,
 				11DA276620767B220062792C /* BaceViewController.swift */,
 				11DA2761207654910062792C /* MainNaviController.swift */,
 			);
@@ -107,7 +136,7 @@
 		11DA27632076619C0062792C /* Listen */ = {
 			isa = PBXGroup;
 			children = (
-				11DA2764207661DA0062792C /* ListenViewController.swift */,
+				114CE5732078624A00A72430 /* ListenViewController.swift */,
 			);
 			path = Listen;
 			sourceTree = "<group>";
@@ -115,7 +144,6 @@
 		1960E5A5205D13140047284B /* SetPage */ = {
 			isa = PBXGroup;
 			children = (
-				1174A0582075BC3B00F8B8FD /* Cell */,
 				118BE3C02075042400671DC9 /* LoginViewController.swift */,
 			);
 			path = SetPage;
@@ -124,6 +152,9 @@
 		19BA7D74205A2DF900897187 = {
 			isa = PBXGroup;
 			children = (
+				118B31592078B3D2009558CD /* Player */,
+				118B31562078639A009558CD /* Sing */,
+				118B315520786387009558CD /* Look */,
 				11DA27632076619C0062792C /* Listen */,
 				11DA2760207654500062792C /* Main */,
 				1960E5A5205D13140047284B /* SetPage */,
@@ -290,6 +321,7 @@
 				19BA7DB0205A2E6500897187 /* LICENSE in Resources */,
 				1960E5A3205D123B0047284B /* Launch Screen.storyboard in Resources */,
 				19BA7D86205A2DF900897187 /* Main.storyboard in Resources */,
+				118B315D2078B3E8009558CD /* PlayerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,10 +349,14 @@
 				11DA276720767B220062792C /* BaceViewController.swift in Sources */,
 				118BE3BF2074E55400671DC9 /* Common.swift in Sources */,
 				19BA7D83205A2DF900897187 /* BGViewController.swift in Sources */,
+				118B3158207863A5009558CD /* SingViewController.swift in Sources */,
+				114CE5742078624A00A72430 /* ListenViewController.swift in Sources */,
 				19BA7D81205A2DF900897187 /* AppDelegate.swift in Sources */,
 				11DA2762207654910062792C /* MainNaviController.swift in Sources */,
 				118BE3C22075042400671DC9 /* LoginViewController.swift in Sources */,
-				11DA2765207661DA0062792C /* ListenViewController.swift in Sources */,
+				118B315420786363009558CD /* LookViewController.swift in Sources */,
+				118B315C2078B3E8009558CD /* PlayerViewController.swift in Sources */,
+				11DA2765207661DA0062792C /* kugouViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

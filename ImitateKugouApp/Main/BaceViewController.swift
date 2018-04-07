@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 //点击听唱看传值协议
 protocol MainNavigationDelegate {
     func changToModel(_ model : ActionModel)
@@ -19,6 +18,8 @@ class BaceViewController: UIViewController {
     var titleBgView : UIView?
     
     var mainDelegate : MainNavigationDelegate?
+    
+    var underline : UIView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +39,7 @@ class BaceViewController: UIViewController {
         titleBgView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 180, height: 35))
         let titleArr = ["听","看","唱"]
         for i in 0..<3 {
-            let btn = UIButton.init(frame: CGRect.init(x: i * 60, y: 0, width: 60, height: 35))
+            let btn = UIButton.init(frame: CGRect.init(x: i * 60, y: 0, width: 60, height: 33))
             btn.tag = i
             btn.setTitle(titleArr[i], for: .normal)
             btn.setTitleColor(UIColor.lightGray, for: .normal)
@@ -47,6 +48,11 @@ class BaceViewController: UIViewController {
             btn.addTarget(self, action: #selector(changeAction(_:)), for: UIControlEvents.touchUpInside)
             titleBgView?.addSubview(btn)
         }
+        underline = UIView()
+        underline?.frame = CGRect.init(x: 0, y: 33, width: 60, height: 2)
+        underline?.backgroundColor = UIColor.white
+        titleBgView?.addSubview(underline!)
+        
         navigationItem.titleView = titleBgView
         
         let tap = UITapGestureRecognizer.init(target: self, action: #selector(retractAccountPage(_:)))
@@ -122,15 +128,15 @@ class BaceViewController: UIViewController {
     func updateBtnsStatus(_ sender : UIButton) {
         let btnArr : [UIView]  = (titleBgView?.subviews)!
         for item in btnArr {
+            guard item.isKind(of: UIButton.self) else{
+                continue
+            }
             let btn = item as! UIButton
             if btn === sender {
                 btn.isSelected = true
             }else{
                 btn.isSelected = false
             }
-            
         }
-        
     }
-    
 }

@@ -1,5 +1,5 @@
 //
-//  ListenViewController.swift
+//  SingViewController.swift
 //  ImitateKugouApp
 //
 //  Created by yetaiwen on 2018/4/7.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ListenViewController: UIViewController {
+class SingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.red
 
-        view.backgroundColor = UIColor.yellow
         // Do any additional setup after loading the view.
     }
 
@@ -33,4 +33,10 @@ class ListenViewController: UIViewController {
     }
     */
 
+}
+
+extension ListenViewController : MainNavigationDelegate{
+    func changToModel(_ model: ActionModel) {
+        
+    }
 }
